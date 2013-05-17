@@ -1,0 +1,445 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Novlify | Write a Book</title>
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<meta content="writer tool writing novel book author helper " name="keywords">
+<meta content="Novlify is a online writers tool for outlining, drafting, and visualizing your novel." name="description">
+<meta content="Richard van der Dys" name="author">
+<meta content="Novlify" property="og:title">
+<meta content="website" property="og:type">
+<meta content="http://www.novlify.com" property="og:url">
+<meta content="http://www.novlify.com/img/logo.png" property="og:image">
+<meta content="novlify.com" property="og:site_name">
+<meta content="616787539" property="fb:admins">
+<link rel="stylesheet" href="css/cerulean.bootstrap.css">
+<link rel="stylesheet" href="css/main.css">
+<link rel="stylesheet" href="css/bootstrap-responsive.css">
+<link href="/img/favicon.png" rel="shortcut icon">
+<link href="/img/logo144.png" sizes="144x144" rel="apple-touch-icon-precomposed">
+<link href="/img/logo114.png" sizes="114x114" rel="apple-touch-icon-precomposed">
+<link href="/img/logo72.png" sizes="72x72" rel="apple-touch-icon-precomposed">
+<link href="/img/logo57.png" rel="apple-touch-icon-precomposed">
+<style media="screen" type="text/css">
+<script id="facebook-jssdk" src="//connect.facebook.net/en_US/all.js#xfbml=1&appId=213679940532">
+<script id="twitter-wjs" src="//platform.twitter.com/widgets.js">
+<script type="text/javascript" async="" src="http://www.google-analytics.com/ga.js">
+<script type="text/javascript">
+<script type="text/javascript" charset="utf-8" data-requirecontext="_" data-requiremodule="index-build" src="/scripts/index-build.js">
+<style type="text/css">
+</head>
+<body data-twttr-rendered="true">
+<div class="navbar navbar-fixed-top">
+<div class="navbar-inner">
+<div class="container-fluid">
+<a class="btn btn-navbar" style="margin-top: 12px;" data-target=".nav-collapse" data-toggle="collapse">
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+</a>
+<a class="brand" href="#">
+<img src="/img/quill32.png">
+novlify
+</a>
+<div class="nav-collapse tools-nav" style="margin-top: 8px;">
+<ul class="nav">
+<li>
+<a id="signin-show" onclick="_gaq.push(['_trackEvent', 'MenuBar', 'SignIn']);" href="#">
+<i class="icon-user icon-white"></i>
+ Sign In
+</a>
+</li>
+<li>
+<a id="signup-show" onclick="_gaq.push(['_trackEvent', 'MenuBar', 'SignUp']);" href="#">
+<i class="icon-ok icon-white"></i>
+ Sign Up
+</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="container-fluid" style="margin-bottom: 48px; padding-top: 32px;">
+<div id="askModal" class="modal hide">
+<div class="modal-header">
+<button class="close" data-dismiss="modal" type="button">×</button>
+<h3>Modal header</h3>
+</div>
+<div class="modal-body">
+<p>One fine body…</p>
+</div>
+<div class="modal-footer">
+<a class="btn cancel" data-dismiss="modal" href="#">Cancel</a>
+<a class="btn btn-primary okay" href="#">Okay</a>
+</div>
+</div>
+<div id="messageModal" class="modal hide">
+<div class="modal-header">
+<button class="close" data-dismiss="modal" type="button">×</button>
+<h3>Modal header</h3>
+</div>
+<div class="modal-body">
+<p>One fine body…</p>
+</div>
+<div class="modal-footer">
+<a class="btn btn-primary okay" data-dismiss="modal" href="#">Okay</a>
+</div>
+</div>
+<div id="signin-modal" class="modal hide">
+<div class="modal-header">
+<button class="close" data-dismiss="modal" type="button">×</button>
+<h3>Sign In</h3>
+</div>
+<div class="modal-body">
+<div class="signin-alert hide"></div>
+<p> </p>
+<form class="form-horizontal">
+<fieldset>
+<div class="control-group">
+<label class="control-label" for="email">Email</label>
+<div class="controls">
+<input class="input-xlarge focused email" type="text" value="">
+</div>
+</div>
+<div class="control-group">
+<label class="control-label" for="pass">Password</label>
+<div class="controls">
+<input class="input-xlarge focused pass" type="password" value="">
+</div>
+</div>
+</fieldset>
+</form>
+<p></p>
+</div>
+<div class="modal-footer">
+<a class="btn cancel" data-dismiss="modal" href="#">Cancel</a>
+<a id="signin" class="btn btn-primary" href="#">Sign In</a>
+</div>
+</div>
+<div id="signup-modal" class="modal hide">
+<div class="modal-header">
+<button class="close" data-dismiss="modal" type="button">×</button>
+<h3>Sign Up</h3>
+</div>
+<div class="modal-body">
+<div class="signup-alert hide"></div>
+<p> </p>
+<form class="form-horizontal">
+<fieldset>
+<div class="control-group">
+<label class="control-label" for="email">Email</label>
+<div class="controls">
+<input class="input-xlarge focused email" type="text" value="">
+</div>
+</div>
+<div class="control-group">
+<label class="control-label" for="pass">Password</label>
+<div class="controls">
+<input class="input-xlarge focused pass" type="password" value="">
+</div>
+</div>
+<div class="control-group">
+<label class="control-label" for="pass">Password Again</label>
+<div class="controls">
+<input class="input-xlarge focused pass-again" type="password" value="">
+</div>
+</div>
+<div class="control-group">
+<div class="controls">
+<label class="checkbox">
+<input class="input-xlarge agree" type="checkbox" value="">
+I agree with novlify's
+<a href="/terms">terms and conditions</a>
+.
+</label>
+</div>
+</div>
+</fieldset>
+</form>
+<p></p>
+</div>
+<div class="modal-footer">
+<a class="btn cancel" data-dismiss="modal" href="#">Cancel</a>
+<a id="signup" class="btn btn-primary" href="#">Sign Up</a>
+</div>
+</div>
+<div class="row-fluid">
+<div class="hero-unit">
+<div class="row-fluid">
+<div class="span6">
+<p></p>
+<h1>Welcome to Novlify!</h1>
+<p></p>
+<br>
+<br>
+<p> </p>
+<table>
+<tbody>
+<tr>
+<td>
+<div class="fb-like fb_edge_widget_with_comment fb_iframe_widget" style="width: 80px;" data-show-faces="false" data-width="80" data-layout="button_count" data-send="false" data-href="http://novlify.com" fb-xfbml-state="rendered">
+<span style="height: 20px; width: 71px;">
+<iframe id="f4818208cdcc62" class="fb_ltr" scrolling="no" name="f8ada3a7fbe248" style="border: medium none; overflow: hidden; height: 20px; width: 71px;" title="Like this content on Facebook." src="http://www.facebook.com/plugins/like.php?api_key=213679940532&locale=en_US&sdk=joey&channel_url=http%3A%2F%2Fstatic.ak.facebook.com%2Fconnect%2Fxd_arbiter.php%3Fversion%3D24%23cb%3Df10036d08438bbc%26origin%3Dhttp%253A%252F%252Fnovlify.com%252Ff25f65282c26ce2%26domain%3Dnovlify.com%26relation%3Dparent.parent&href=http%3A%2F%2Fnovlify.com&node_type=link&width=90&layout=button_count&colorscheme=light&show_faces=false&send=false&extended_social_context=false">
+<!DOCTYPE html>
+<html id="facebook" class="no_js" lang="en">
+<head>
+<meta charset="utf-8">
+<meta content="noodp, noydir" name="robots">
+<meta id="meta_referrer" content="default" name="referrer">
+<script>
+<title>Facebook</title>
+<style>
+<script>
+<script>
+</head>
+<body class="plugin ff4 win Locale_en_US">
+<div id="FB_HiddenContainer" style="position:absolute; top:-10000px; width:0px; height:0px;"></div>
+<div class="pluginSkinLight">
+<div>
+<table id="u_0_0" class="uiGrid pluginConnectButtonLayoutRoot" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td class="hCent">
+<div>
+<form id="u_0_1" onsubmit="return window.Event && Event.__inlineSubmit && Event.__inlineSubmit(this,event)" action="/plugins/like/connect" method="post" ajaxify="/plugins/like/connect" rel="async">
+<input type="hidden" autocomplete="off" value="AVrDwYZ7" name="lsd">
+<input type="hidden" value="http://novlify.com/" name="href" autocomplete="off">
+<input type="hidden" value="like" name="action" autocomplete="off">
+<input type="hidden" name="nobootload" autocomplete="off">
+<input type="hidden" value="http://novlify.com/" name="iframe_referer" autocomplete="off">
+<input type="hidden" name="ref" autocomplete="off">
+<div class="pluginConnectButton">
+<div class="pluginButton pluginButtonSmall pluginButtonInline pluginConnectButtonDisconnected" title="">
+<div>
+<button type="submit">
+<i class="pluginButtonIcon img sp_like sx_like_fav"></i>
+Like
+</button>
+</div>
+</div>
+<div class="pluginButton pluginButtonSmall pluginButtonPressed pluginButtonInline pluginButtonX pluginConnectButtonConnected hidden_elem" title="">
+<div>
+<button type="submit">
+<i class="pluginButtonIcon pluginButtonXOff img sp_like sx_like_ch"></i>
+<i class="pluginButtonIcon pluginButtonXOn img sp_like sx_like_x" title=""></i>
+</button>
+Like
+</div>
+</div>
+</div>
+</form>
+</div>
+</td>
+<td>
+<div>
+<div class="pluginCountButton pluginCountNum">
+<span id="u_0_2">
+<span class="pluginCountTextConnected">20</span>
+<span class="pluginCountTextDisconnected">19</span>
+</span>
+</div>
+<div class="pluginCountButtonNub">
+<s></s>
+<i></i>
+</div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+<script>
+</div>
+</div>
+<script>
+<script>
+</body>
+</html>
+</iframe>
+</span>
+</div>
+</td>
+<td>
+<iframe class="twitter-share-button twitter-count-horizontal" scrolling="no" frameborder="0" allowtransparency="true" src="http://platform.twitter.com/widgets/tweet_button.1368146021.html#_=1368825126655&count=horizontal&id=twitter-widget-0&lang=en&original_referer=http%3A%2F%2Fnovlify.com%2F&size=m&text=Novlify%20%7C%20Write%20a%20Book&url=http%3A%2F%2Fnovlify.com&via=novlify" style="width: 109px; height: 20px;" title="Twitter Tweet Button" data-twttr-rendered="true">
+<!DOCTYPE html>
+<html class=" regular" lang="en">
+<head>
+<meta charset="utf-8">
+<link href="//twitter.com" rel="dns-prefetch">
+<title>Tweet Button</title>
+<style type="text/css">
+</head>
+<body class=" hcount ltr ready count-ready">
+<div id="widget">
+<div class="btn-o">
+<a id="b" class="btn" target="_blank" href="https://twitter.com/intent/tweet?original_referer=http%3A%2F%2Fnovlify.com%2F&text=Novlify%20%7C%20Write%20a%20Book&tw_p=tweetbutton&url=http%3A%2F%2Fnovlify.com&via=novlify">
+<i></i>
+<span id="l" class="label">Tweet</span>
+</a>
+</div>
+<div id="c" class="count-o enabled">
+<i></i>
+<u></u>
+<a id="count" target="_blank" href="http://twitter.com/search?q=http%3A%2F%2Fnovlify.com" title="This page has been shared 5 times. View these Tweets." aria-describedby="count-desc">5</a>
+</div>
+</div>
+<script charset="utf-8" type="text/javascript">
+<script type="text/javascript">
+<script type="text/javascript">
+<img src="//p.twitter.com/t.gif?_=1368825126655&count=horizontal&id=twitter-widget-0&lang=en&original_referer=http%3A%2F%2Fnovlify.com%2F&size=m&text=Novlify%20%7C%20Write%20a%20Book&url=http%3A%2F%2Fnovlify.com&via=novlify&type=share&twttr_referrer=http%3A%2F%2Fnovlify.com%2F&twttr_widget=1&twttr_dnt=1" alt="" style="position: absolute; height: 1px; width: 1px; top: -9999px; left: -9999px;">
+<script type="text/javascript" src="//cdn.api.twitter.com/1/urls/count.json?url=http%3A%2F%2Fnovlify.com&callback=twttr.receiveCount">
+<p id="count-desc" class="aria">This page has been shared 5 times. View these Tweets.</p>
+</body>
+</html>
+</iframe>
+<script>
+</td>
+<td>
+<span id="tumblr_button_abc123">
+<a href="http://www.tumblr.com/share/photo?source=http%3A%2F%2Fnovlify.com%2Fimg%2Flogo.png&caption=Check%20out%20Novlify!&clickthru=http%3A%2F%2Fnovlify.com" title="Share on Tumblr" style="display:inline-block; text-indent:-9999px; margin-left: -15px; overflow:hidden; width:81px; height:20px; background:url('http://platform.tumblr.com/v1/share_1.png') top left no-repeat transparent;">Share on Tumblr</a>
+</span>
+</td>
+</tr>
+</tbody>
+</table>
+<p></p>
+<p class="lead"> Novlify makes it easy to layout your ideas and organize your thoughts. Quickly outline your plot, then write your drafts with ease. We will help you get that first draft finished as soon as possible! </p>
+<button id="tryit" class="btn btn-large btn-primary" onclick="_gaq.push(['_trackEvent', 'Home', 'TryIt']);">Try It Out!</button>
+</div>
+<div class="span6">
+<center>
+<iframe id="vid" width="480" height="360" frameborder="0" allowfullscreen="" src="http://www.youtube.com/embed/e4pJvKPe7dw?HD=1;rel=0;showinfo=0" style="margin-top: 16px;">
+<!DOCTYPE html>
+<html lang="pt" dir="ltr">
+<head>
+<title>YouTube</title>
+<link id="css-43591525" href="http://s.ytimg.com/yts/cssbin/www-embed-vflGQEVbX.css" rel="stylesheet">
+<link href="http://www.youtube.com/watch?v=e4pJvKPe7dw" rel="canonical">
+<style>
+<script>
+</head>
+<body id="" class="date-20130517 pt_BR ltr ytg-old-clearfix guide-feed-v2 site-left-aligned exp-new-site-width exp-watch7-comment-ui gecko gecko-20" dir="ltr">
+<div id="player" class="full-frame" style="width: 100%; height: 100%; overflow: hidden;">
+<embed id="video-player" width="100%" height="100%" tabindex="0" type="application/x-shockwave-flash" src="http://s.ytimg.com/yts/swfbin/watch_as3-vfl_Bpqfq.swf" allowfullscreen="true" allowscriptaccess="always" bgcolor="#000000" flashvars="is_html5_mobile_device=false&video_id=e4pJvKPe7dw&playlist_module=http%3A%2F%2Fs.ytimg.com%2Fyts%2Fswfbin%2Fplaylist_module-vfl73DB3j.swf&eurl=http%3A%2F%2Fnovlify.com%2F&probably_logged_in=1&el=embedded&enablejsapi=1&HD=1&cr=BR&hl=pt_BR&rel=0&watch_xlb=http%3A%2F%2Fs.ytimg.com%2Fyts%2Fxlbbin%2Fwatch-strings-pt_BR-vflFfT7TF.xlb&endscreen_module=http%3A%2F%2Fs.ytimg.com%2Fyts%2Fswfbin%2Fendscreen-vfljrqX9W.swf&showinfo=0&sk=31LbaoU-ysaHIbWfbi7Qy5p2XrpR_OoBC&sendtmp=1&share_icons=http%3A%2F%2Fs.ytimg.com%2F...googleusercontent.com%2F-4eretwEC5UI%2FAAAAAAAAAAI%2FAAAAAAAAAAA%2FiIY5umDI6n4%2Fs28-c-k%2Fphoto.jpg&iurl=http%3A%2F%2Fi2.ytimg.com%2Fvi%2Fe4pJvKPe7dw%2Fhqdefault.jpg&fexp=901803%2C912505%2C921712%2C916626%2C919510%2C924605%2C901208%2C929123%2C929915%2C929906%2C925714%2C929119%2C931202%2C932802%2C928017%2C912518%2C911416%2C906906%2C904476%2C930807%2C919373%2C906836%2C933701%2C900345%2C912711%2C929606%2C910075&jsapicallback=ytPlayerOnYouTubePlayerReady&playerapiid=player1&framer=http%3A%2F%2Fnovlify.com%2F">
+</div>
+<script id="js-479977823" class="www-embed" data-loaded="true" src="//s.ytimg.com/yts/jsbin/www-embed-vfl63AW9C.js">
+<script>
+<script>
+</body>
+</html>
+</iframe>
+</center>
+</div>
+</div>
+</div>
+<div class="row-fluid">
+<div class="span4">
+<h2>Simple and Easy</h2>
+<hr>
+<p class="lead">
+Novlify Allows you to
+<b>Outline</b>
+and
+<b>Draft</b>
+your chapters with ease. With its Event List Feature, you can quickly outline the chapters of a novel and not worry about details and structure. Along with allowing you to draft and outline your chapter, you can also track the setting of the chapter, which will help you visualize the events.
+</p>
+</div>
+<div class="span4">
+<h2>Fast and Fun</h2>
+<hr>
+<p class="lead">
+Other features of Novlify include the
+<b>Character</b>
+,
+<b>Location</b>
+, and
+<b>Note</b>
+management. With these tools, you can keep track of the characters and settings of your novel and save detailed information about each of them. The Notes feature allows you to quickly put down your thoughts and ideas that you can edit and come back to anytime.
+</p>
+</div>
+<div class="span4">
+<h2>For Everyone</h2>
+<hr>
+<p class="lead">
+Novlify is for
+<b>every</b>
+author, from novice to professional. The aim of Novlify to to help people learn to write in a fun and new way, using the latest technology. Novlify is built on top of open source software such as
+<a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap</a>
+,
+<a href="http://jquery.com/">jQuery</a>
+, and
+<a href="http://nodejs.org/">NodeJS</a>
+.
+</p>
+</div>
+</div>
+</div>
+<div class="navbar bottombar navbar-fixed-bottom">
+<div class="navbar-inner">
+<div class="pull-right">
+<div style="margin-top: 12px; margin-right: 20px;">
+<a style="color: white;" href="http://novlify.tumblr.com">Visit our Blog</a>
+</div>
+</div>
+<div style="padding: 10px 20px 10px;">
+Copyright © Novlify 2012 |
+<a style="color: white;" onclick="_gaq.push(['_trackEvent', 'Footer', 'Contact']);" href="mailto:support@novlify.com">Contact Us</a>
+</div>
+</div>
+</div>
+<script type="text/javascript">
+<script type="text/javascript">
+<div id="fb-root" class=" fb_reset">
+<div style="position: absolute; top: -10000px; height: 0px; width: 0px;">
+<div>
+<iframe id="fb_xdm_frame_http" scrolling="no" frameborder="0" name="fb_xdm_frame_http" allowtransparency="true" aria-hidden="true" title="Facebook Cross Domain Communication Frame" tab-index="-1" style="border: medium none;" src="http://static.ak.facebook.com/connect/xd_arbiter.php?version=24#channel=f25f65282c26ce2&origin=http%3A%2F%2Fnovlify.com&channel_path=%2F%3Ffb_xd_fragment%23xd_sig%3Df2e78f4d39a6d9c%26">
+<!DOCTYPE html>
+<html>
+<head>
+<title>Facebook Cross-Domain Messaging helper</title>
+</head>
+<body>
+<script>
+<b id="warning" style="display: none; color:red">SECURITY WARNING: Please treat the URL above as you would your password and do not share it with anyone.</b>
+<script>
+</body>
+</html>
+</iframe>
+<iframe id="fb_xdm_frame_https" scrolling="no" frameborder="0" name="fb_xdm_frame_https" allowtransparency="true" aria-hidden="true" title="Facebook Cross Domain Communication Frame" tab-index="-1" style="border: medium none;" src="https://s-static.ak.facebook.com/connect/xd_arbiter.php?version=24#channel=f25f65282c26ce2&origin=http%3A%2F%2Fnovlify.com&channel_path=%2F%3Ffb_xd_fragment%23xd_sig%3Df2e78f4d39a6d9c%26">
+<!DOCTYPE html>
+<html>
+<head>
+<title>Facebook Cross-Domain Messaging helper</title>
+</head>
+<body>
+<script>
+<b id="warning" style="display: none; color:red">SECURITY WARNING: Please treat the URL above as you would your password and do not share it with anyone.</b>
+<script>
+</body>
+</html>
+</iframe>
+</div>
+</div>
+<div style="position: absolute; top: -10000px; height: 0px; width: 0px;">
+<div>
+<iframe scrolling="no" frameborder="0" name="fa903579f595a4" allowtransparency="true" style="display: none;" src="https://www.facebook.com/connect/ping?client_id=213679940532&response_type=token%2Csigned_request%2Ccode&display=none&domain=novlify.com&origin=1&redirect_uri=http%3A%2F%2Fstatic.ak.facebook.com%2Fconnect%2Fxd_arbiter.php%3Fversion%3D24%23cb%3Df5ec0765000c04%26origin%3Dhttp%253A%252F%252Fnovlify.com%252Ff25f65282c26ce2%26domain%3Dnovlify.com%26relation%3Dparent&sdk=joey">
+<html>
+<head></head>
+<body>
+<div>
+<span>A URL informada não é permitida pela configuração do aplicativo.: One or more of the given URLs is not allowed by the App's settings. It must match the Website URL or Canvas URL, or the domain must be a subdomain of one of the App's domains.</span>
+<script>
+</div>
+</body>
+</html>
+</iframe>
+</div>
+</div>
+</div>
+<script>
+<script type="text/javascript" src="/scripts/require.js" data-main="/scripts/index-build.js">
+</div>
+</body>
+</html>
