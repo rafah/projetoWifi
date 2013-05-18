@@ -1,3 +1,11 @@
+#senhas, #usuarios {
+	width: 120px;
+}
+
+#senha, #login {
+	font-size: 10px;
+}
+
 html {
 margin: 0;
 }
