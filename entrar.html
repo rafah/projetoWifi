@@ -9,10 +9,9 @@
 
 <meta content="width=device-width, initial-scale=1.0" name="viewport">
 <link rel="stylesheet" href="css/bootstrap.css">
-<link href="css/signup.css" type="text/css" rel="stylesheet">
+<link href="css/signin.css" type="text/css" rel="stylesheet">
 <link href="css/theme.css" type="text/css" rel="stylesheet">
 <link type="text/css" rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lato:300,400,700,900,300italic,400italic,700italic,900italic">
-
 
 
 </head>
@@ -78,27 +77,48 @@
 </div>
 
 
-<div id="box_sign">
+<div id="box_login">
 <div class="container">
 <div class="span12 box_wrapper">
 <div class="span12 box">
 <div>
 <div class="head">
-<h4>Criar nova conta</h4>
+<h4>Entrar</h4>
+</div>
+<div class="social">
+<a class="face_login" href="#">
+<span class="face_icon">
+<img alt="fb" src="img/i_face.png">
+</span>
+<span class="text">Sign in with Facebook</span>
+</a>
+<div class="division">
+<hr class="left">
+<span>or</span>
+<hr class="right">
+</div>
 </div>
 <div class="form">
 <form>
 <input type="text" placeholder="Email">
-<input type="password" placeholder="Senha">
-<input type="password" placeholder="Repita a senha">
-<input class="btn" type="submit" value="Cadastrar">
+<input type="password" placeholder="Password">
+<div class="remember">
+<div class="left">
+<input id="remember_me" type="checkbox">
+<label for="remember_me">Remember me</label>
+</div>
+<div class="right">
+<a href="reset.html">Forgot password?</a>
+</div>
+</div>
+<input class="btn" type="submit" value="Sign in">
 </form>
 </div>
 </div>
 </div>
 <p class="already">
-Já possui uma conta?
-<a href="signin.html">Entrar</a>
+Don't have an account?
+<a href="signup.html"> Sign up</a>
 </p>
 </div>
 </div>

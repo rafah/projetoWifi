@@ -5,22 +5,20 @@
 
 <head>
 <meta charset="utf8">
-<title>Blue Wifi - Inicio</title>
+<title>Blue Wifi</title>
 
 <!-- JQUERY -->
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 		<script>window.jQuery || document.write('<script src="js/jquery-1.7.1.min.js"><\/script>')</script>
-
-
-		<!-- TWITTER BOOTSTRAP JS -->
-		<script src="js/bootstrap.min.js"></script>
+<!-- TWITTER BOOTSTRAP JS -->
+        <script src="js/bootstrap.js"></script>
         <script src="js/bootstrap-modal.js"></script>
-
 
 <meta content="width=device-width, initial-scale=1.0" name="viewport">
 <link rel="stylesheet" href="css/bootstrap.css">
 <link href="css/theme.css" type="text/css" rel="stylesheet">
 <link href="css/animate.css" type="text/css" rel="stylesheet">
+<link href="css/signin.css" type="text/css" rel="stylesheet">
 <link type="text/css" rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lato:300,400,700,900,300italic,400italic,700italic,900italic">
 
 
@@ -63,25 +61,9 @@
 
 
 <li>
-
-    
     <!-- Button to trigger modal -->
-    <a href="#myModal" role="button" class="btn-header" data-toggle="modal">Cadastre-se</a>
+    <a href="cadastro.html" class="btn-header">Cadastre-se</a>
      
-    <!-- Modal -->
-    <div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-    <div class="modal-header">
-    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-    <h3 id="myModalLabel">Modal header</h3>
-    </div>
-    <div class="modal-body">
-    <p>One fine body…</p>
-    </div>
-    <div class="modal-footer">
-    <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
-    <button class="btn btn-primary">Save changes</button>
-    </div>
-    </div>
 </li>
 </ul>
 </div>
@@ -135,9 +117,9 @@
 <fieldset>
 <legend>Entrar</legend>
 </fieldset>
-Login:
+
 <input type="text" name="txtUser" placeholder="Usuario: ..."><br>
-Senha:
+
 <input type="text" name="txtSenha" placeholder="Senha..."><br>
 <button class="btn btn-success">Entrar</button><br>
 <a href="#" id="senha">Esqueci minha senha</a><br>
@@ -146,7 +128,39 @@ Senha:
 <legend>Experimente</legend>
 <p>Você pode utilizar a internet por até 1 hora totalmente gratis para testar nossos serviços.</p>
 <p>Acesso liberado para todas as redes sociais, sites, jogos e etc.</p>
-<button class="btn btn-info btn-large">Utilizar 1hr gratuitamente</button>
+
+<button class="btn btn-info btn-large"type="button" data-toggle="modal" data-target="#myModal">Utilizar 1hr gratuitamente</button>
+ 
+    <!-- Modal -->
+    <div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+    <h3 id="myModalLabel">Novo usuario</h3>
+    </div>
+    <div class="modal-body">
+    <!--Corpo do modal-->
+    <p><small>Para utilizar sua hora gratuita é necessario que faça um pequeno cadastro.</small>
+        <hr>
+
+        <iframe src="https://www.facebook.com/plugins/registration?
+             client_id=113869198637480&
+             redirect_uri=https%3A%2F%2Fdevelopers.facebook.com%2Ftools%2Fecho%2F&
+             fields=name,birthday,gender,location,email, phone, captcha"
+        scrolling="auto"
+        frameborder="no"
+        style="border:none"
+        allowTransparency="true"
+        width="100%"
+        height="330">
+
+</iframe>
+    <!--Corpo do modal-->
+    </div>
+    <div class="modal-footer">
+    <button class="btn" data-dismiss="modal" aria-hidden="true">Fechar</button>
+    <button class="btn btn-primary">Concluir</button>
+    </div>
+    </div>
 
 </div>
 </div>
@@ -209,7 +223,7 @@ Por mês
 </div>
 </div>
 <div class="section">
-<h3>Passages of Lorem randomised words which look slightly.</h3>
+<h3>Plano basico para utilização convencional.</h3>
 <ul class="perks">
 <li>
 <i class="i_shuffle"></i>
@@ -242,7 +256,7 @@ Por mês
 </div>
 </div>
 <div class="section">
-<h3>Passages of Lorem randomised words which look slightly.</h3>
+<h3>Plano Pro, ideal para jogar online, baixar filmes e musicas.</h3>
 <ul class="perks">
 <li>
 <i class="i_shuffle"></i>
@@ -279,7 +293,7 @@ Por mês
 </div>
 </div>
 <div class="section">
-<h3>Passages of Lorem randomised words which look slightly.</h3>
+<h3>Plano convencional para utilização em mais de 1 ponto de acesso.</h3>
 <ul class="perks">
 <li>
 <i class="i_shuffle"></i>
@@ -298,6 +312,7 @@ das 08:00 as 17:00
 3 Usuarios
 </li>
 </ul>
+<br>
 <a class="btn" href="#">Selecionar plano</a>
 </div>
 </div>
@@ -402,8 +417,8 @@ Blue Wifi - Nosso sinal chega... onde você nem imagina.
 </div>
 </div>
 </div>
-<script src="http://code.jquery.com/jquery-latest.js">
-<script src="js/bootstrap.min.js">
-<script src="js/theme.js">
+<script src="http://code.jquery.com/jquery-latest.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/theme.js"></script>
 </body>
 </html>
